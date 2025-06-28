@@ -2,8 +2,8 @@
   "name": "gugufarm-types",
   "version": "0.1.0",
   "description": "",
-  "main": "dist/index.ts",
-  "types": "dist/indes.d.ts",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "scripts": {
     "build": "tsc -p tsconfig.json",
     "prepublishOnly": "npm run clean && npm run build",
@@ -19,12 +19,13 @@
   "license": "ISC",
   "packageManager": "pnpm@10.12.3",
   "devDependencies": {
-    "@types/node": "^24.0.7",
     "rimraf": "^6.0.1",
-    "ts-node": "^10.9.2",
     "typescript": "^5.8.3"
   },
   "dependencies": {
     "zod": "^3.25.67"
-  }
+  },
+  "files": [
+    "dist"
+  ]
 }
